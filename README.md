@@ -17,3 +17,6 @@ Application Python simple pour gérer les tâches quotidiennes.
 ## Exécution
 Ouvrir main.py dans VS Code.
 Cliquer sur Run Python File.
+- Rechercher une tâche par mot-clé
+- Ajout de la fonction de recherche des tâches
+- Publication du projet sur GitHub
