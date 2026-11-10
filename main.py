@@ -4,6 +4,8 @@ def afficher_menu():
     print("1. Ajouter une tâche")
     print("2. Afficher les tâches")
     print("0. Quitter")
+    print("2. Afficher les tâches")
+    print("3. Rechercher une tâche")
 
 
 def lancer_application():
@@ -29,6 +31,17 @@ def lancer_application():
                 print("--- Liste des tâches ---")
                 for index, tache in enumerate(taches, start=1):
                     print(f"{index}. {tache}")
+        elif choix == "3":
+            mot_cle = input("Mot-clé à rechercher : ").strip()
+            trouve = False
+
+            for index, tache in enumerate(taches, start=1):
+                if mot_cle.lower() in tache.lower():
+                    print(f"{index}. {tache}")
+                    trouve = True
+
+            if not trouve:
+                print("Aucune tâche trouvée.")
 
         elif choix == "0":
             print("Au revoir !")
